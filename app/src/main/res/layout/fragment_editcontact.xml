@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relLayout1">
+            <include layout="@layout/snippet_edit_contacttoolbar"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relLayout1"
+            android:id="@+id/relLayout2"
+            android:padding="25dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/black"
+                android:layout_marginTop="40dp"
+                android:id="@+id/contactImage"
+                android:src="@drawable/ic_backarrow"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/contactImage"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="30dp"
+                android:id="@+id/ivCamera"
+                android:src="@drawable/ic_camara"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relLayout2"
+            android:id="@+id/relLayout3"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/ivPerson"
+                android:src="@drawable/ic_person"
+                android:layout_centerVertical="true"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ivPerson"
+                android:layout_marginStart="20dp"
+                android:id="@+id/etContactPerson"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relLayout3"
+            android:id="@+id/relLayout4"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/ivPhone"
+                android:src="@drawable/ic_phone"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ivPhone"
+                android:layout_marginStart="20dp"
+                android:id="@+id/etContactPhone"
+                />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/devices_option"
+                android:layout_marginStart="20dp"
+                android:id="@+id/select_divice"
+                android:layout_below="@id/ivPhone"
+                android:layout_marginTop="50dp"
+                android:layout_alignStart="@id/etContactPhone">
+            </Spinner>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relLayout4"
+            android:id="@+id/relLayout5"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/ivEmail"
+                android:src="@drawable/ic_email_grey"
+                android:layout_centerVertical="true"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ivEmail"
+                android:layout_marginStart="20dp"
+                android:id="@+id/etContactEmail"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

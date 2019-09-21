@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ContactsAppDemo</string>
+    <string name="al_mamun">Al Mamun</string>
+
+    <!--Fragment name-->
+    <string name="edit_contact_fragment">Edit Contact Fragment</string>
+    <string name="contact_fragment">Contact Fragment</string>
+    <string name="view_contact_fragment">View Contact Fragment</string>
+    <string name="change_dialog_photo">Change Dialog Photo</string>
+    <string name="add_contact_fragment">Add Contact Fragment</string>
+
+
+    //key-------
+    <string name="contact">Contact</string>
+    <string name="edit_contact">Edit Contact</string>
+    <string name="add_contact">Add Contact</string>
+
+
+    <string-array name="devices_option">
+        <item>Mobile</item>
+        <item>Home</item>
+        <item>Work</item>
+        <item>Main</item>
+        <item>Work Fax</item>
+        <item>Home Fax</item>
+        <item>Pager</item>
+        <item>Other</item>
+        <item>Custom</item>
+    </string-array>
+</resources>
